@@ -20,7 +20,19 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 source .bashrc
 
 # brew
-brew install zsh tmux gh fd neovim ripgrep starship exa lazygit fzf starship
+brew install \
+  zsh \
+  tmux \
+  gh \
+  fd \
+  neovim \
+  ripgrep \
+  starship \
+  exa \
+  lazygit \
+  fzf \
+  starship \
+  tealdeer
 
 # docker
 sudo snap install docker

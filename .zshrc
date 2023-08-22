@@ -83,3 +83,7 @@ function nvims() {
   fi
   NVIM_APPNAME=$config nvim $@
 }
+
+# tldr
+alias tldrf='tldr -l | fzf --preview "tldr {1} --color always" --preview-window right,70% | xargs tldr'
+
