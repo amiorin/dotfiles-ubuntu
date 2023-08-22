@@ -82,8 +82,10 @@ git config --global user.email "82086424+onefootball-data-insights@users.noreply
 ```
 
 # Git author and committer
+* Committer: "onefootball-data-insights <82086424+onefootball-data-insights@users.noreply.github.com>"
+* Author: "Alberto Miorin <109069886+alberto-of@users.noreply.github.com>"
 
 ```
-Committer: "onefootball-data-insights <82086424+onefootball-data-insights@users.noreply.github.com>"
-Author: "Alberto Miorin <109069886+alberto-of@users.noreply.github.com>"
+git commit --amend --author="Alberto Miorin <109069886+alberto-of@users.noreply.github.com>" --no-edit
 ```
+
