@@ -69,3 +69,9 @@ git config --global user.name "onefootball-data-insights"
 git config --global user.email "82086424+onefootball-data-insights@users.noreply.github.com"
 ```
 
+# Git author and committer
+
+```
+Committer: "onefootball-data-insights <82086424+onefootball-data-insights@users.noreply.github.com>"
+Author: "Alberto Miorin <109069886+alberto-of@users.noreply.github.com>"
+```
