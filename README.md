@@ -8,6 +8,9 @@ export EDITOR=vim
 ### end
 source .bashrc
 
+# fix timezone
+sudo timedatectl set-timezone "Europe/Berlin"
+
 sudo apt update
 sudo apt install -y vim sudo curl git build-essential
 # CI=1 to avoid asking the password for becoming root
