@@ -32,7 +32,12 @@ brew install \
   lazygit \
   fzf \
   starship \
-  tealdeer
+  tealdeer \
+  bat \
+  git-delta \
+  postgresql@14 \
+  micromamba \
+  zoxide
 
 # docker
 sudo snap install docker

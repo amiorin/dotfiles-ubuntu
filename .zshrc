@@ -47,9 +47,6 @@ alias u="cd .."
 # pipx
 export PATH=~/.local/bin:$PATH
 
-# https://github.com/clvv/fasd
-eval "$(fasd --init auto)"
-
 # https://neovim.io/
 export EDITOR=nvim
 
@@ -74,7 +71,7 @@ alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
-  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config » " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
     return 0
@@ -84,6 +81,8 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
-# tldr
+# https://helderberto.com/integrating-tldr-with-fzf
 alias tldrf='tldr -l | fzf --preview "tldr {1} --color always" --preview-window right,70% | xargs tldr'
 
+# https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
